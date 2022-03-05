@@ -20,7 +20,6 @@ const Repos = () => {
         });
     return total;
   }, {});
-  console.log(languages);
 
   const mostUsed = Object.values(languages)
     .sort((a, b) => {
@@ -48,7 +47,6 @@ const Repos = () => {
   );
   stars = Object.values(stars).slice(-5).reverse();
   forks = Object.values(forks).slice(-5).reverse();
-  console.log(stars);
 
   return (
     <section className='section'>
